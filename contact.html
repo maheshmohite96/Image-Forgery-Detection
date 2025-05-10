@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--header section start -->
+<header class="header">
+
+    <section class="flex">
+
+        <div id="menu-btn" class="fas fa-bars-staggered"></div>
+
+        <a href="index.html" class="logo"><i class="fas fa-briefcase"></i></a>
+
+        
+        <!-- <nav class="navbar">
+            <a href="home.html">home</a>
+            <a href="about.html">about us</a>
+            <a href="contact.html">contact here</a>
+        </nav> -->
+
+        <nav class="navbar">
+            <div class="logo">FORGERY DETECTOR</div>
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">How it Works</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+    </section>
+
+</header>
+<!--header section ends -->
+
+
+<!-- contact us section starts -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Contact Us</title> -->
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Function to handle form submission
+        function handleFormSubmit(event) {
+            event.preventDefault(); // Prevent form from submitting traditionally
+            alert("𝙎𝙚𝙣𝙙 𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙎𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮");
+            document.getElementById('contactForm').reset(); // Optional: Reset the form fields
+        }
+    </script>
+</head>
+<body>
+
+<div class="section-title"></div>
+
+<section class="contact">
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-phone"></i>
+            <a href="tel:1234567890">9607056596</a>
+            <!-- <a href="tel:1112223333">111-222-3333</a> -->
+        </div>
+
+        <div class="box">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:sam@gmail.com">maheshmohite1093@gmail.com</a>
+         </div>
+
+        <div class="box">
+            <i class="fas fa-map-marker-alt"></i>
+            <a href="#">AMGOI Vathar (Maharashtra), India</a>
+        </div>
+    </div>
+
+    <form id="contactForm" onsubmit="handleFormSubmit(event)">
+        <h3>drop your message</h3>
+        <div class="flex">
+            <div class="box">
+                <p>name <span>*</span></p>
+                <input type="text" name="Name" required maxlength="20" placeholder="Enter your name" class="input">
+            </div>
+            <div class="box">
+                <p>email <span>*</span></p>
+                <input type="email" name="Email" required maxlength="50" placeholder="Enter your email" class="input">
+            </div>
+            <div class="box">
+                <p>number <span>*</span></p>
+                <input type="number" name="Number" required min="0" placeholder="Enter your number" class="input">
+            </div>
+            <div class="box">
+                <p>role <span>*</span></p>
+                <select name="Role" required class="input">
+                    <option value="employee">Student</option>
+                    <option value="employeer">employee</option>
+                </select>
+            </div>
+        </div>
+        <p>message <span>*</span></p>
+        <textarea name="message" class="input" required maxlength="1000" placeholder="Enter your message" cols="30" rows="10"></textarea>
+        <input type="submit" value="Send Message" name="Send" class="btn">
+    </form>
+</section>
+
+</body>
+</html>
+
+
+<!-- contact us section ends -->
+
+
+
+
+
+
+<!-- footer section starts -->
+<footer class="footer">
+    <section class="grid">
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html"><i class="fas fa-angle-right"></i>home</a>
+            <a href="about.html"><i class="fas fa-angle-right"></i>about</a>
+            <a href="contact.html"><i class="fas fa-angle-right"></i>Contact Us</a>
+            <a href="#"><i class="fas fa-angle-right"></i>filter search</a>
+        </div>
+        <!-- <div class="box">
+            <h3>extra links</h3>
+            <a href="#"><i class="fas fa-angle-right"></i>account</a>
+            <a href="login.html"><i class="fas fa-angle-right"></i>login</a>
+            <a href="register.html"><i class="fas fa-angle-right"></i>register</a>
+            <a href="#"><i class="fas fa-angle-right"></i>post job</a>
+            <a href="#"><i class="fas fa-angle-right"></i>dashboard</a>
+        </div> -->
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+            <!-- <a href="#"><i class="fab fa-instagram"></i>instagram</a> -->
+            <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+            <a href="#"><i class="fab fa-youtube"></i>youtube</a>
+
+        </div>
+
+    </section>
+
+    <div class="credit">&copy; copyright @2025 by <span> IMAGE FOURGERY DETECTION </span>all rights reserved</div>
+
+</footer>
+<!-- footer section ends -->
+
+<!--custom js file link-->
+<script src="script.js"></script>
+
+</body>
+</html>

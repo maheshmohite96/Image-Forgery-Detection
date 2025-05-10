@@ -1,0 +1,548 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1e1e2f, #282c34);
+  color: rgb(255, 250, 250);
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: rgba(255, 255, 255, 0.384);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  margin-top: 200px;
+  size: 150px;
+}
+
+.card {
+  background: #fff;
+  color: #000;
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+input[type="file"] {
+  display: block;
+  margin: 20px auto;
+}
+
+button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#previewBox {
+  margin-top: 20px;
+}
+
+#previewImage {
+  max-width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+#resultBox {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* login page start*/
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body{
+  background: linear-gradient(rgba(0,0,0,0.4)50%,rgba(0,0,0,0.4)50%), url(2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.form{
+  width: 300px;
+  height: 350px;
+  color: #fff;
+  background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 40px 25px;
+  border-radius: 10px;
+}
+
+.form h1{
+  width: 220px;
+  text-align: center;
+  padding-left: 11px;
+  font-size: 35px;
+  color: #66ff00;
+  margin-bottom: 20px;
+}
+
+.form p{
+  padding-bottom: -15px;
+}
+
+.form input{
+  width: 100%;
+  height: 35px;
+  padding-top: 5px;
+  margin-bottom: 30px;
+  background: transparent;
+  border-bottom: 1px solid #fff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: #fff;
+  outline: none;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.form input[type="submit"]
+{
+  width: 60%;
+  margin-left: 50px;
+  border: none;
+  height: 40px;
+  color: #000;
+  background: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+.form input[type="submit"]:hover{
+  cursor: pointer;
+  background: #66ff00;
+  color: #fff;
+  font-weight: bold;
+}
+/* login page End */
+
+/* register page start */
+.auth-background {
+  background: url('2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-box {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+  width: 320px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.auth-box input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.auth-box button {
+  width: 95%;
+  padding: 10px;
+  border: none;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* register page end */
+
+
+/* contact us start */
+.contact .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 30rem);
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+}
+.contact .box-container .box{
+  background-color: var(--white);
+  border: var(--border);
+  border-radius: .5rem;
+  box-shadow: var(--box-shadow);
+  padding: 0rem 1rem;
+  text-align: center;
+  color: #fff;
+  background-color: white;
+}
+.contact .box-container .box i{
+  height: 4.5rem;
+  width: 5rem;
+  line-height: 4.5rem;
+  font-size: 2rem;
+  color: var(--white);
+  background-color: var(--black);
+  border-radius: .5rem;
+  margin-bottom: 2rem;
+}
+.contact .box-container .boxa{
+  display: block;
+  padding-top: .5rem;
+  font-size: 1.6rem;
+  color: var(--white);
+  line-height: 1.5;
+}
+
+.contact form{
+  margin-top: 0.5rem;
+  background-color: var(--white);
+  border: var(--border);
+  border-radius: .5rem;
+  box-shadow: var(--box-shadow);
+  padding: 4rem;
+  text-align: center;
+}
+.contact form h3{
+  font-size: 2.5rem;
+  color: var(--white);
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+.contact form .flex{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+}
+.contact form .flex .box{
+  flex: 1 1 40rem;
+  flex-wrap: wrap;
+}
+.contact form .input{
+  width: 100%;
+  border-radius: .5rem;
+  padding: 1.4rem;
+  color: var(--black);
+  font-size: 1.8rem;
+  background-color: var(--light-bg);
+  margin: 1rem 0;
+}
+.contact form p{
+  text-align: left;
+  font-size: 1.6rem;
+  padding-top: 1rem;
+  color: var(--light-color);
+}
+.contact form p span{
+  color: var(--red);
+  color: aqua;
+}
+.contact form textarea{
+  height: 10rem;
+  resize: none;
+}
+.contact form .btn{
+  height: 3rem;
+  width: 7rem;
+  color: red;
+}
+
+/* contact us end */
+
+
+/* footer part */
+
+.footer .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 30rem);
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .grid .box h3 {
+  font-size: 1.5rem;
+  color: var(--black);
+  margin: 1rem 0;
+  padding-bottom: 1rem;
+  text-transform: capitalize;
+  align-items: center;
+  text-align: center;
+}
+
+.footer .grid .box a {
+  display: block;
+  padding: 1.5rem 0;
+  font-size: 1.6rem;
+  color: var(--light-color);
+  align-items: center;
+  text-align: center;
+}
+
+.footer .grid .box a i {
+  color: var(--main-color);
+  margin-right: .8rem;
+  transition: .2s linear;
+  /* Smooth transition for margin-right */
+}
+
+.footer .grid .box a:hover i {
+  margin-right: 2rem;
+  /* Increasing margin-right on hover for better styling */
+}
+
+.footer .credit {
+  text-align: center;
+  padding: 3rem 2rem;
+  border-top: var(--border);
+  background-color: var(--white);
+  font-size: 2rem;
+  color: var(--light-color);
+}
+
+.footer .credit span {
+  color: var(--main-color);
+  text-transform: capitalize;
+}
+
+/* media queries */
+@media (max-width: 991px) {
+  html {
+      font-size: 50%;
+  }
+  .section-title{
+      font-size: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+      display: inline-block;
+  }
+
+  .header .flex .navbar {
+      position: absolute;
+      top: 99%;
+      left: 0;
+      right: 0;
+      border-top: var(--border);
+      background-color: var(--white);
+      padding: 1rem .5rem;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      transition: .2s linear;
+  }
+
+  .header .flex .navbar .active {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .header .flex .navbar a {
+      display: block;
+      padding: 1.5rem 2rem;
+  }
+}
+.category .box-container{
+  grid-template-columns: repeat(auto-fit, 16rem);
+}
+
+.category .box-container .box{
+  flex-flow: column;
+  text-align: center;
+}
+.section-title{
+  font-size: 4rem;
+  color: var(--white);
+  padding: 4rem;
+}
+
+@media (max-width: 450px) {/*pixel sizze kami kelyavar website mobile madhye on disnyasathi*/
+  html {
+      font-size: 50%;
+  }
+  .section-title{
+      font-size: 3.5rem;
+  }
+}
+
+
+/*for about us section*/
+.about img{
+  width:100% ;
+  margin-bottom: 1.5rem ;
+}
+
+.about .box{
+  background-color: var(--white);
+  border-radius: .5rem;
+  border: var(--border);
+  padding: 1rem ;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  background-color: var(--white);
+  border: var(--border);
+  border-radius: .5rem;
+  box-shadow: var(--box-shadow);
+  padding: 0rem 0.5rem;
+  text-align: center;
+  color: #fff;
+  background-color: palevioletred;
+}
+
+.about .box h3{
+  font-size: 2.5rem;
+  color:var(--black);
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.about .box p{
+  padding: 1rem 0;
+  line-height: 1.8;
+  color: var(--light-color);
+  font-size: 1.6rem;
+  text-align: center;
+
+}
+
+/*for review images*/
+/* Image Styling */
+.reviews img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 0; /* Ensure no extra spacing */
+  padding: 0;
+  border-radius: 50%; /* Optional: to make them circular */
+  text-align: center;
+}
+
+/* Grid Layout for Reviews */
+.reviews .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ensures responsive columns */
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+/* Styling for Review Boxes */
+.reviews .box-container .box {
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  border: var(--border);
+  border-radius: .5rem;
+  padding: 2rem;
+  text-align: center;
+  align-items: center;
+}
+
+/* Styling for Stars */
+.reviews .box-container .box .stars {
+  color: var(--main-color);
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.reviews .box-container .box .title{
+  text-transform: capitalize;
+  font-size: 2rem;
+  color:var(--black);
+  text-align: right;
+  text-align: center;
+  background-color: var(--white);
+  border: var(--border);
+  border-radius: .5rem;
+  box-shadow: var(--box-shadow);
+  padding: 0rem 1rem;
+  text-align: center;
+  color: #fff;
+  background-color: white;
+}
+
+.reviews .box-container .box p{
+  text-align: right;
+  font-size: 1.6rem;
+  color: var(--light-color);
+  padding: 1rem 0;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.reviews .box-container .box.user{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.reviews .box-container .box.user img{
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviews .box-container .box.user h3{
+  font-size: 2rem;
+  color: var(--black);
+  margin-bottom: .5rem;
+  text-transform: capitalize;
+  align-items: center;
+}
+
+.reviews .box-container .box.user span{
+  color: var(--light-color);
+  font-size: 1.6rem;
+
+}

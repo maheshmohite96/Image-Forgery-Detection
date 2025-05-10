@@ -1,0 +1,77 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register | Image Forgery Detection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-background">
+  <div class="auth-box">
+    <h2>Create an Account</h2>
+    <form id="registerForm">
+      <input type="text" placeholder="Enter your name" required><br>
+      <input type="email" placeholder="Enter your email" required><br>
+      <input type="password" placeholder="Create password" required><br>
+      <input type="password" placeholder="Confirm password" required><br>
+      <button type="submit">Register</button>
+    </form>
+
+    <p style="margin-top: 10px;">Already have an account? <a href="login.html">Login</a></p>
+  </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register | Image Forgery Detection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-background">
+  <div class="auth-box">
+    <h2>Create an Account</h2>
+    <form id="registerForm">
+      <input type="text" placeholder="Enter your name" required><br>
+      <input type="email" placeholder="Enter your email" required><br>
+      <input type="password" placeholder="Create password" required><br>
+      <input type="password" placeholder="Confirm password" required><br>
+      <button type="submit">Register</button>
+    </form>
+    <p style="margin-top: 10px;">Already have an account? <a href="login.html">Login</a></p>
+  </div>
+
+  <form method="POST" action="{{ url_for('register') }}"></form>
+
+  <script>
+document.getElementById('registerForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const email = document.querySelector('input[type="email"]').value;
+  const password = document.querySelectorAll('input[type="password"]')[0].value;
+
+  localStorage.setItem('userEmail', email);
+  localStorage.setItem('userPassword', password);
+
+  // Show success message
+  const msg = document.createElement('div');
+  msg.textContent = 'Registered Successfully!';
+  msg.style.position = 'fixed';
+  msg.style.top = '20px';
+  msg.style.left = '50%';
+  msg.style.transform = 'translateX(-50%)';
+  msg.style.backgroundColor = '#28a745';
+  msg.style.color = 'white';
+  msg.style.padding = '10px 20px';
+  msg.style.borderRadius = '5px';
+  msg.style.boxShadow = '0 0 10px rgba(0,0,0,0.3)';
+  document.body.appendChild(msg);
+
+  setTimeout(() => {
+    window.location.href = 'index.html';
+  }, 2000);
+});
+  </script>
+</body>
+</html>

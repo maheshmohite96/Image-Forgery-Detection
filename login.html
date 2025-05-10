@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Image Forgery Detection</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="form">
+    <h1>LOGIN HERE</h1>
+
+    <form id="loginForm">
+      <p>Email:</p>
+      <input type="email" id="loginEmail" placeholder="Email here" required />
+
+      <p>Password:</p>
+      <input type="password" id="loginPassword" placeholder="Password here" required />
+
+      <p style="font-size: 0.9em;">Don’t have an account? <a href="register.html">Register</a></p>
+
+      <input type="submit" value="LOGIN" />
+    </form>
+  </div>
+
+  <form method="POST" action="{{ url_for('login') }}"></form>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const loginEmail = document.getElementById("loginEmail").value;
+      const loginPassword = document.getElementById("loginPassword").value;
+
+      const storedEmail = localStorage.getItem("userEmail");
+      const storedPassword = localStorage.getItem("userPassword");
+
+      if (loginEmail === storedEmail && loginPassword === storedPassword) {
+        const msg = document.createElement("div");
+        msg.textContent = "Login Successfully!";
+        msg.className = "popup-message success";
+        msg.style.position = "fixed";
+        msg.style.top = "20px";
+        msg.style.left = "50%";
+        msg.style.transform = "translateX(-50%)";
+        msg.style.backgroundColor = "#28a745";
+        msg.style.color = "white";
+        msg.style.padding = "10px 20px";
+        msg.style.borderRadius = "5px";
+        msg.style.zIndex = "9999";
+        document.body.appendChild(msg);
+
+        setTimeout(() => {
+          msg.remove();
+          window.location.href = "index.html"; // your home page
+        }, 2000);
+      } else {
+        alert("Invalid email or password.");
+      }
+    });
+  </script>
+</body>
+</html>
